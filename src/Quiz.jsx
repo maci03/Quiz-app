@@ -23,6 +23,17 @@ const Quiz = () => {
         // დანარჩენი კითხვები
       ];
 
-    
+    const HandleOptionClick = (selectedOption) =>{
+        const currentQuestion = quizQuestions[currentQuestionIndex];
+    }
+
+    if(selectedOption === currentQuestion.correctAnswer){
+        setScore(score + 1)
+        setFeedback("Correct!");
+    }else{
+        setFeedback(`incorrect. the correct answer is: ${currentQyestion.correctAnswer} `);
+    }
+    setUserAnswer(selectedOption);
+
 
 }
