@@ -1,5 +1,8 @@
 // src/Quiz.js
 import React, { useState } from "react";
+const colors = ['#ff0000', '#00ff00', '#0000ff', '#ff00ff', '#ffff00'];
+const randomColor = colors[Math.floor(Math.random() * colors.length)];
+
 
 const Quiz = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -18,7 +21,36 @@ const Quiz = () => {
       options: ["Venus", "Mars", "Jupiter", "Saturn"],
       correctAnswer: "Mars",
     },
-    // Add more questions here
+    {
+      question: "What is the largest planet in our solar system?",
+      options: ["Earth", "Jupiter", "Saturn", "Mars"],
+      correctAnswer: "Jupiter",
+    },
+    {
+      question: "What is the chemical symbol for gold?",
+      options: ["Go", "Gd", "Gl", "Au"],
+      correctAnswer: "Au",
+    },
+    {
+      question: "Who wrote the play 'Romeo and Juliet'?",
+      options: ["Charles Dickens", "William Shakespeare", "Jane Austen", "Mark Twain"],
+      correctAnswer: "William Shakespeare",
+    },
+    {
+      question: "What is the largest mammal in the world?",
+      options: ["Giraffe", "Elephant", "Blue Whale", "Hippopotamus"],
+      correctAnswer: "Blue Whale",
+    },
+    {
+      question: "Which gas do plants absorb from the atmosphere and convert into oxygen during photosynthesis?",
+      options: ["Nitrogen", "Carbon Dioxide", "Oxygen", "Hydrogen"],
+      correctAnswer: "Carbon Dioxide",
+    },
+    {
+      question: "Who was the first woman to fly solo across the Atlantic Ocean?",
+      options: ["Amelia Earhart", "Bessie Coleman", "Harriet Quimby", "Jacqueline Cochran"],
+      correctAnswer: "Amelia Earhart",
+    },
   ];
 
   const handleOptionClick = (selectedOption) => {
