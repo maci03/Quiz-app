@@ -16,7 +16,6 @@ button {
   }
   .quiz-container {
     background: linear-gradient(to right, #ff00cc, #3333cc, #00ccff);
-    /* Add more gradient stops as needed */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);

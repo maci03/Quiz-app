@@ -1,4 +1,3 @@
-// src/Quiz.js
 import React, { useState } from "react";
 const colors = ['#ff0000', '#00ff00', '#0000ff', '#ff00ff', '#ffff00'];
 const randomColor = colors[Math.floor(Math.random() * colors.length)];
