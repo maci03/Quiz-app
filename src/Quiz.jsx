@@ -52,6 +52,9 @@ const Quiz = () => {
     },
   ];
 
+
+
+  
   const handleOptionClick = (selectedOption) => {
     const currentQuestion = quizQuestions[currentQuestionIndex];
 
